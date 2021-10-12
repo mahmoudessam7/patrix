@@ -1,0 +1,53 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.testimonial {
+    position: relative;
+    padding: 0;
+    @include gradient;
+
+    &__card {
+        padding: 2rem 1.6rem;
+        text-align: center;
+        border-radius: 0.625rem;
+        background: rgba($white, 0.8);
+        height: auto;
+        i {
+            font-size: 1.5rem;
+            color: rgba($primary, 0.7);
+        }
+
+        .rating {
+
+            i {
+                font-size: 1rem;
+                color: rgba($primary, 0.7);
+            }
+        }
+    }
+
+    &__pic {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+            border: 0.325rem solid rgba($primary, 0.7);
+        }
+    }
+
+    &__name {
+        text-align: center;
+        margin-top: 4rem;
+        color: $white;
+        font-weight: 500;
+        h3 {
+
+        }
+
+        p {
+
+        }
+    }
+}

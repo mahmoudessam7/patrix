@@ -1,0 +1,43 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.get-started {
+    background-color: $gray-200;
+    padding: 4rem;
+}
+
+.cta-info {
+    padding: 3rem;
+    margin: 1rem 0;
+
+    &__list {
+        list-style: none;
+        margin-bottom: 0.7rem;
+        display: block;
+        position: relative;
+        margin-left: -1rem;
+
+        li::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f00c";
+            font-weight: 600;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// FORM CONTENT 
+
+.form {
+    padding: 3rem;
+
+    button {
+        border: none;
+
+        i {
+            font-size: 0.8rem;
+            margin-left: 0.3rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.menu {
+    @include gradient;
+
+    li {
+        
+        padding: 0 0.7rem;
+
+        a {
+            color: $white !important;
+            font-weight: 600;
+            text-transform: capitalize;
+
+        }
+    }
+}
+
+.navbar-brand {
+    -webkit-animation: moveInRightLogo 1s ease-out;
+                animation: moveInRightLogo 1s ease-out;
+}
+
+#navbarNav {
+    -webkit-animation: moveInBottom 2s ease-out;
+                animation: moveInBottom 2s ease-out;
+}
